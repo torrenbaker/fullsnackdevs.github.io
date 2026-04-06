@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Snack Devs — Product Studio</title>
+  <meta name="description" content="We design, build, and ship software products. Games, tools, and platforms — from concept to App Store.">
+  <meta property="og:title" content="Full Snack Devs">
+  <meta property="og:description" content="Product studio shipping games, tools, and platforms.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2300c2ff'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='bold' font-size='18' fill='%2308080d'>fs</text></svg>">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ========== NAV ========== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="logo-mark">fs</span>
+      Full Snack Devs
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="privacy.html" class="nav-cta">Privacy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Shipping products
+    </div>
+    <h1>We build software<br>that <span class="accent">performs.</span></h1>
+    <p class="hero-sub">Full Snack Devs is a product studio focused on mobile applications, interactive experiences, and developer tools.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="number">4</div>
+        <div class="label">Products</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">iOS</div>
+        <div class="label">Platform</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">2026</div>
+        <div class="label">Active</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== APP BELT ========== -->
+<section class="belt-section">
+  <div class="belt-label">Our Products</div>
+  <div class="belt-track" id="beltTrack">
+    <!-- Set 1 -->
+    <div class="belt-card">
+      <div class="belt-icon pf">PF</div>
+      <div class="belt-info">
+        <h3>Pixel Fury</h3>
+        <div class="meta">1v1 Arcade Fighter</div>
+        <div class="status"><span class="status-dot soon"></span> Submitting</div>
+      </div>
+    </div>
+    <div class="belt-card">
+      <div class="belt-icon nf">NF</div>
+      <div class="belt-info">
+        <h3>Ninja Focus</h3>
+        <div class="meta">Productivity &middot; Focus Timer</div>
+        <div class="status"><span class="status-dot live"></span> Live on App Store</div>
+      </div>
+    </div>
+    <div class="belt-card">
+      <div class="belt-icon gg">GG</div>
+      <div class="belt-info">
+        <h3>Galaxy Glide</h3>
+        <div class="meta">Space Runner</div>
+        <div class="status"><span class="status-dot live"></span> Live on App Store</div>
+      </div>
+    </div>
+    <div class="belt-card">
+      <div class="belt-icon bq">BQ</div>
+      <div class="belt-info">
+        <h3>Balloons: Skyward Quest</h3>
+        <div class="meta">Arcade Adventure</div>
+        <div class="status"><span class="status-dot live"></span> Live on App Store</div>
+      </div>
+    </div>
+    <!-- Set 2 (duplicate for seamless loop) -->
+    <div class="belt-card">
+      <div class="belt-icon pf">PF</div>
+      <div class="belt-info">
+        <h3>Pixel Fury</h3>
+        <div class="meta">1v1 Arcade Fighter</div>
+        <div class="status"><span class="status-dot soon"></span> Submitting</div>
+      </div>
+    </div>
+    <div class="belt-card">
+      <div class="belt-icon nf">NF</div>
+      <div class="belt-info">
+        <h3>Ninja Focus</h3>
+        <div class="meta">Productivity &middot; Focus Timer</div>
+        <div class="status"><span class="status-dot live"></span> Live on App Store</div>
+      </div>
+    </div>
+    <div class="belt-card">
+      <div class="belt-icon gg">GG</div>
+      <div class="belt-info">
+        <h3>Galaxy Glide</h3>
+        <div class="meta">Space Runner</div>
+        <div class="status"><span class="status-dot live"></span> Live on App Store</div>
+      </div>
+    </div>
+    <div class="belt-card">
+      <div class="belt-icon bq">BQ</div>
+      <div class="belt-info">
+        <h3>Balloons: Skyward Quest</h3>
+        <div class="meta">Arcade Adventure</div>
+        <div class="status"><span class="status-dot live"></span> Live on App Store</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== APPS ========== -->
+<section id="apps">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// Products</span>
+      <h2 class="section-title">What we've shipped.</h2>
+      <p class="section-desc">Every product is designed, built, and maintained in-house. No templates. No outsourcing.</p>
+    </div>
+
+    <div class="apps-grid">
+      <div class="app-card c-red reveal reveal-delay-1">
+        <div class="app-card-icon pf">PF</div>
+        <h3>Pixel Fury</h3>
+        <div class="platform">iOS &middot; Swift &middot; SpriteKit</div>
+        <p>Retro pixel-art 1v1 arcade fighter with special moves, meter management, combo chains, and a 6-tier adaptive AI system that learns your habits.</p>
+        <a href="#" class="app-link">Coming Soon &rarr;</a>
+      </div>
+
+      <div class="app-card c-blue reveal reveal-delay-2">
+        <div class="app-card-icon nf">NF</div>
+        <h3>Ninja Focus</h3>
+        <div class="platform">iOS &middot; v1.1</div>
+        <p>A focused productivity timer designed to keep you locked in. Minimal interface, maximum discipline.</p>
+        <a href="#" class="app-link">App Store &rarr;</a>
+      </div>
+
+      <div class="app-card c-orange reveal reveal-delay-3">
+        <div class="app-card-icon gg">GG</div>
+        <h3>Galaxy Glide</h3>
+        <div class="platform">iOS &middot; v2.0</div>
+        <p>Navigate through procedurally generated star fields in this fast-paced space runner. Simple controls, addictive gameplay.</p>
+        <a href="#" class="app-link">App Store &rarr;</a>
+      </div>
+
+      <div class="app-card c-purple reveal reveal-delay-4">
+        <div class="app-card-icon bq">BQ</div>
+        <h3>Balloons: Skyward Quest</h3>
+        <div class="platform">iOS &middot; v1.0</div>
+        <p>Guide your balloon through challenging aerial courses. Tap-to-rise mechanics meet precision obstacle navigation.</p>
+        <a href="#" class="app-link">App Store &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// About</span>
+      <h2 class="section-title">Product-first. Always.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p><strong>Full Snack Devs</strong> is a product studio that designs, engineers, and ships software across mobile, web, and emerging platforms.</p>
+        <p>We operate at the intersection of product thinking, technical depth, and speed of execution. Every product we release is built from the ground up — no boilerplate, no shortcuts, no outsourced code.</p>
+        <p>Our team brings experience from enterprise finance, management consulting, biotech research, and software engineering. We apply that cross-disciplinary perspective to build products people actually use.</p>
+      </div>
+
+      <div class="about-values reveal reveal-delay-2">
+        <div class="value-item">
+          <h4>Ship, then iterate</h4>
+          <p>We get products into users' hands quickly and improve through real feedback, not hypothetical roadmaps.</p>
+        </div>
+        <div class="value-item">
+          <h4>Own the stack</h4>
+          <p>From infrastructure to interface, we build and control every layer. No dependencies we don't understand.</p>
+        </div>
+        <div class="value-item">
+          <h4>Quality is non-negotiable</h4>
+          <p>Performance, design, architecture — every detail is deliberate. We audit our own code before shipping.</p>
+        </div>
+        <div class="value-item">
+          <h4>Build what's next</h4>
+          <p>Games today, developer tools tomorrow, AI-powered platforms after that. We go where the problems are interesting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TEAM ========== -->
+<section id="team">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// Team</span>
+      <h2 class="section-title">Who builds this.</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar">TB</div>
+        <h3>Torren Baker</h3>
+        <div class="role">Senior Developer</div>
+        <p class="bio">ASU W.P. Carey alum. Capital markets and structured finance across Brookfield and Blackstone portfolio companies. Building software products since 2023 — iOS games, AI-powered SaaS, and prediction market infrastructure.</p>
+        <a href="https://linkedin.com/in/torrenbaker" target="_blank" class="team-link">LinkedIn &rarr;</a>
+      </div>
+
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-avatar">RG</div>
+        <h3>Robert Groves</h3>
+        <div class="role">Sr. Architect</div>
+        <p class="bio">Harvard alum. Former Senior Associate at L.E.K. Consulting with a background in biotech research. Brings strategic and analytical rigor from management consulting to product architecture and system design.</p>
+        <a href="https://linkedin.com/in/bobbygroves" target="_blank" class="team-link">LinkedIn &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CAREERS ========== -->
+<section id="careers" class="about-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// Careers</span>
+      <h2 class="section-title">Build with us.</h2>
+    </div>
+
+    <div class="careers-content">
+      <div class="careers-info reveal">
+        <h3>We're always looking for sharp people.</h3>
+        <p>We value execution over credentials, curiosity over comfort, and ownership over delegation. If you want to build real products that ship to real users, this is the place.</p>
+        <p>We offer internships and contract roles for developers, designers, and product thinkers who want hands-on experience shipping software — not writing reports about it.</p>
+
+        <div class="open-roles">
+          <div class="role-tag">
+            <span>iOS Developer Intern</span>
+            <span class="type">Internship</span>
+          </div>
+          <div class="role-tag">
+            <span>Product Design Intern</span>
+            <span class="type">Internship</span>
+          </div>
+          <div class="role-tag">
+            <span>Full-Stack Engineer</span>
+            <span class="type">Contract</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="careers-form reveal reveal-delay-2">
+        <h3>Apply</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="" disabled selected>Select a role</option>
+              <option value="ios-intern">iOS Developer Intern</option>
+              <option value="design-intern">Product Design Intern</option>
+              <option value="fullstack">Full-Stack Engineer</option>
+              <option value="other">Other / General Interest</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="portfolio">Portfolio / GitHub</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/you">
+          </div>
+          <div class="form-group">
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+          </div>
+          <div class="form-group">
+            <label for="message">Why you?</label>
+            <textarea id="message" name="message" placeholder="What do you build? What drives you?"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">// Contact</span>
+      <h2 class="section-title">Get in touch.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card reveal reveal-delay-1">
+        <div class="icon">&#9993;</div>
+        <h3>App Support</h3>
+        <p>Having issues with one of our apps? We'll help.</p>
+        <a href="mailto:support@fullsnackdevs.com">support@fullsnackdevs.com</a>
+      </div>
+
+      <div class="contact-card reveal reveal-delay-2">
+        <div class="icon">&#128172;</div>
+        <h3>General Inquiries</h3>
+        <p>Partnerships, press, or just want to say hello.</p>
+        <a href="mailto:hello@fullsnackdevs.com">hello@fullsnackdevs.com</a>
+      </div>
+
+      <div class="contact-card reveal reveal-delay-3">
+        <div class="icon">&#128188;</div>
+        <h3>Careers</h3>
+        <p>Interested in joining the team?</p>
+        <a href="#careers">View Open Roles &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-copy">&copy; 2026 Full Snack Devs LLC. All rights reserved.</div>
+    <ul class="footer-links">
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li><a href="#contact">Support</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelector('.nav-links')?.classList.remove('open');
+    }
+  });
+});
+
+// Nav background on scroll
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  nav.style.background = window.scrollY > 50
+    ? 'rgba(8, 8, 13, 0.95)'
+    : 'rgba(8, 8, 13, 0.8)';
+});
+</script>
+
+</body>
+</html>
