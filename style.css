@@ -408,7 +408,7 @@ section { padding: 8rem 2rem; }
 .belt-track {
   display: flex;
   gap: 1.5rem;
-  animation: belt-scroll 40s linear infinite;
+  animation: belt-scroll 30s linear infinite;
   width: max-content;
 }
 
