@@ -647,18 +647,11 @@ section { padding: 8rem 2rem; }
 }
 
 .team-avatar {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
-  background: var(--bg-elevated);
+  object-fit: cover;
   border: 2px solid rgba(0, 212, 170, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--accent);
   margin-bottom: 1.25rem;
 }
 
