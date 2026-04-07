@@ -21,8 +21,6 @@
   --accent-dim: rgba(0, 212, 170, 0.08);
   --accent-glow: rgba(0, 212, 170, 0.12);
 
-  --warm: #D4A054;
-  --warm-dim: rgba(212, 160, 84, 0.1);
 
   --green: #00D4AA;
 
@@ -311,15 +309,15 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-cta .cta-hiring {
-  color: var(--warm);
+  color: var(--accent);
 }
 
 .hero-cta .cta-hiring::after {
-  background: var(--warm);
+  background: var(--accent);
 }
 
 .hero-cta .cta-hiring:hover {
-  color: #E0B06A;
+  color: var(--accent-hover);
 }
 
 .hero-cta .arrow {
@@ -452,7 +450,7 @@ img.belt-icon {
 
 .belt-icon.pf { background: #D4605A; }
 .belt-icon.nf { background: #00D4AA; }
-.belt-icon.gg { background: #D4A054; }
+.belt-icon.gg { background: #00D4AA; }
 .belt-icon.bq { background: #8B6E52; }
 
 .belt-info h3 {
@@ -510,7 +508,7 @@ img.belt-icon {
 .app-card:hover::before { opacity: 1; }
 .app-card.c-pf::before { background: #D4605A; }
 .app-card.c-nf::before { background: #00D4AA; }
-.app-card.c-gg::before { background: #D4A054; }
+.app-card.c-gg::before { background: #00D4AA; }
 .app-card.c-bq::before { background: #8B6E52; }
 
 .app-card-icon {
@@ -533,7 +531,7 @@ img.app-card-icon {
 
 .app-card-icon.pf { background: #D4605A; }
 .app-card-icon.nf { background: #00D4AA; }
-.app-card-icon.gg { background: #D4A054; }
+.app-card-icon.gg { background: #00D4AA; }
 .app-card-icon.bq { background: #8B6E52; }
 
 .app-card h3 {
@@ -755,7 +753,7 @@ img.app-card-icon {
 .role-tag .type {
   font-family: var(--font-mono);
   font-size: 0.68rem;
-  color: var(--warm);
+  color: var(--accent);
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
