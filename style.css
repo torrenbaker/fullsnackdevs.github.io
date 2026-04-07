@@ -97,15 +97,8 @@ img { max-width: 100%; display: block; }
 
 .nav-logo .logo-mark {
   width: 32px; height: 32px;
-  background: var(--accent);
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: 0.8rem;
-  color: var(--bg-base);
+  object-fit: cover;
 }
 
 .nav-links {
@@ -440,8 +433,8 @@ section { padding: 8rem 2rem; }
 }
 
 .belt-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 12px;
   flex-shrink: 0;
   display: flex;
@@ -450,6 +443,11 @@ section { padding: 8rem 2rem; }
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--bg-base);
+  object-fit: cover;
+}
+
+img.belt-icon {
+  display: block;
 }
 
 .belt-icon.pf { background: #D4605A; }
@@ -526,6 +524,11 @@ section { padding: 8rem 2rem; }
   font-size: 1.4rem;
   color: var(--bg-base);
   font-weight: 700;
+  object-fit: cover;
+}
+
+img.app-card-icon {
+  display: block;
 }
 
 .app-card-icon.pf { background: #D4605A; }
