@@ -337,7 +337,11 @@ img { max-width: 100%; display: block; }
    Sections — Shared
    ========================================== */
 
-section { padding: 8rem 2rem; }
+section { padding: 9rem 2rem; }
+
+section + section {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
 
 .container {
   max-width: var(--max-width);
@@ -380,10 +384,29 @@ section { padding: 8rem 2rem; }
 
 .belt-section {
   padding: 5rem 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-surface);
   overflow: hidden;
+  position: relative;
+}
+
+.belt-section::before,
+.belt-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.belt-section::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-base), transparent);
+}
+
+.belt-section::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-base), transparent);
 }
 
 .belt-label {
@@ -401,13 +424,14 @@ section { padding: 8rem 2rem; }
   gap: 1.5rem;
   animation: belt-scroll 30s linear infinite;
   width: max-content;
+  will-change: transform;
 }
 
 .belt-track:hover { animation-play-state: paused; }
 
 @keyframes belt-scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
 }
 
 .belt-card {
@@ -589,9 +613,7 @@ img.app-card-icon {
    ========================================== */
 
 .about-section {
-  background: var(--bg-surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: var(--bg-base);
 }
 
 .about-centered {
@@ -857,6 +879,31 @@ img.app-card-icon {
   cursor: pointer;
   transition: all var(--transition);
   margin-top: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-submit::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 65%
+  );
+  transform: translateX(-100%);
+  animation: btn-shimmer 3.5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes btn-shimmer {
+  0%   { transform: translateX(-100%); }
+  40%  { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
 }
 
 .btn-submit:hover {
@@ -869,8 +916,7 @@ img.app-card-icon {
    ========================================== */
 
 .contact-section {
-  background: var(--bg-surface);
-  border-top: 1px solid var(--border);
+  background: var(--bg-base);
 }
 
 .contact-centered {
@@ -1056,7 +1102,7 @@ button, a, .role-tag, .belt-card {
   .hero { padding: 7rem 1.5rem 4rem; }
   .hero-bg-text-row { font-size: 20vw; }
 
-  section { padding: 5rem 1.5rem; }
+  section { padding: 6rem 1.5rem; }
 
   .apps-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
