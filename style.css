@@ -1055,6 +1055,41 @@ img.app-card-icon {
   line-height: 1.65;
 }
 
+.legal-page h3 {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 1.75rem 0 0.6rem;
+  color: var(--text-primary);
+}
+
+.legal-page h4 {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 1.25rem 0 0.4rem;
+  color: var(--text-secondary);
+}
+
+.legal-page blockquote {
+  margin: 1rem 0 1.25rem;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 2px solid var(--accent);
+}
+
+.legal-page blockquote p {
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.legal-page blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .legal-page a {
   color: var(--accent);
 }
