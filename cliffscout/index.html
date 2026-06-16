@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CliffScout — Full Snack Devs</title>
+  <meta name="description" content="CliffScout — a community map for discovering cliff jumping and water spots. Legal, privacy, and support resources.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/assets/FullSnackDevsLogo.png">
+  <style>
+    .cs-links { list-style:none; padding:0; margin:1.5rem 0 0; display:grid; gap:0.75rem; }
+    .cs-links a {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1rem 1.25rem; border:1px solid var(--border); border-radius:12px;
+      color:var(--text-primary); text-decoration:none; font-family:var(--font-display);
+      font-weight:600; transition:border-color .2s, background .2s;
+    }
+    .cs-links a:hover { border-color:var(--accent); background:var(--bg-surface); }
+    .cs-links .desc { display:block; font-family:var(--font-body, inherit); font-weight:400; font-size:0.85rem; color:var(--text-tertiary); margin-top:0.25rem; }
+    .cs-links .arrow { color:var(--accent); }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">
+      <span class="logo-mark">fs</span>
+      Full Snack Devs
+    </a>
+    <ul class="nav-links">
+      <li><a href="/cliffscout/privacy">Privacy</a></li>
+      <li><a href="/cliffscout/terms">Terms</a></li>
+      <li><a href="/cliffscout/support">Support</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="legal-page">
+  <div class="container">
+    <a href="/index.html" class="legal-back">&larr; Back to Full Snack Devs</a>
+    <h1>CliffScout</h1>
+    <p>CliffScout is a community map for discovering cliff jumping and water spots. Cliff jumping is inherently dangerous — please read the Terms of Service and safety information before using the app. Below are CliffScout's legal, privacy, and support resources.</p>
+
+    <ul class="cs-links">
+      <li>
+        <a href="/cliffscout/privacy">
+          <span>Privacy Policy<span class="desc">What we collect, how we use it, and your controls</span></span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="/cliffscout/terms">
+          <span>Terms of Service<span class="desc">Assumption of risk, liability, and the rules of use</span></span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="/cliffscout/support">
+          <span>Support<span class="desc">Get help, report a spot, or send feedback</span></span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="/cliffscout/community-guidelines">
+          <span>Community Guidelines<span class="desc">Keeping spot information trustworthy and the community decent</span></span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>

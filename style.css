@@ -476,6 +476,7 @@ img.belt-icon {
 .belt-icon.nf { background: #00D4AA; }
 .belt-icon.gg { background: #00D4AA; }
 .belt-icon.bq { background: #8B6E52; }
+.belt-icon.cs { background: #2E8BC0; }
 
 .belt-info h3 {
   font-family: var(--font-display);
@@ -534,6 +535,7 @@ img.belt-icon {
 .app-card.c-nf::before { background: #00D4AA; }
 .app-card.c-gg::before { background: #00D4AA; }
 .app-card.c-bq::before { background: #8B6E52; }
+.app-card.c-cs::before { background: #2E8BC0; }
 
 .app-card-icon {
   width: 56px;
@@ -557,6 +559,7 @@ img.app-card-icon {
 .app-card-icon.nf { background: #00D4AA; }
 .app-card-icon.gg { background: #00D4AA; }
 .app-card-icon.bq { background: #8B6E52; }
+.app-card-icon.cs { background: #2E8BC0; }
 
 .app-card h3 {
   font-family: var(--font-display);
